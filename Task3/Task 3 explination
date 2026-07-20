@@ -1,0 +1,158 @@
+# 📊 Task 3: Monthly Charges Distribution
+
+## 📌 Objective
+
+The objective of this task is to analyze the distribution of customer monthly charges using a Histogram. Understanding how monthly charges are distributed helps identify pricing patterns, customer segments, and billing trends within the dataset.
+
+---
+
+## 📂 Dataset
+
+**Dataset:** Telco Customer Churn Dataset
+
+The dataset contains information about telecom customers, including:
+
+* Customer Demographics
+* Service Details
+* Contract Information
+* Monthly Charges
+* Total Charges
+* Churn Status
+
+---
+
+## 🛠️ Tools Used
+
+* Python
+* Pandas
+* Matplotlib
+* Jupyter Notebook / VS Code
+
+---
+
+## 📋 Steps Performed
+
+### 1. Load the Dataset
+
+The dataset was imported using the Pandas library.
+
+```python
+import pandas as pd
+
+df = pd.read_csv("Telco_Customer_Churn_Dataset.csv")
+```
+
+### 2. Explore Monthly Charges
+
+Basic statistical information was generated using:
+
+```python
+df["MonthlyCharges"].describe()
+```
+
+This provides:
+
+* Count
+* Mean
+* Standard Deviation
+* Minimum Value
+* Maximum Value
+* Quartiles
+
+### 3. Create Histogram
+
+A Histogram was created to visualize the distribution of Monthly Charges.
+
+```python
+plt.hist(df["MonthlyCharges"], bins=10)
+```
+
+### 4. Format the Chart
+
+The following formatting was applied:
+
+* Chart Title
+* X-Axis Label
+* Y-Axis Label
+* Grid Lines
+
+---
+
+## 📈 Visualization
+
+### Histogram
+
+**Title:** Distribution of Monthly Charges
+
+**X-Axis:** Monthly Charges ($)
+
+**Y-Axis:** Number of Customers
+
+The histogram groups monthly charges into intervals of 10 and displays the number of customers within each range.
+
+---
+
+## 🔍 Key Insights
+
+### Insight 1
+
+Monthly charges vary significantly across customers depending on the services they subscribe to.
+
+### Insight 2
+
+Some charge ranges contain a higher concentration of customers, indicating popular pricing plans.
+
+### Insight 3
+
+The histogram helps identify customer segments based on billing amounts.
+
+### Insight 4
+
+Understanding charge distribution can support pricing strategy and customer retention analysis.
+
+---
+
+## 📊 Business Value
+
+Analyzing monthly charge distribution helps businesses:
+
+* Understand customer spending behavior
+* Identify pricing trends
+* Detect unusual billing patterns
+* Support customer segmentation
+* Improve pricing and retention strategies
+
+---
+
+## 🚀 Skills Demonstrated
+
+* Data Exploration
+* Exploratory Data Analysis (EDA)
+* Histogram Creation
+* Data Visualization
+* Chart Formatting
+* Python Programming
+* Pandas
+* Matplotlib
+
+---
+
+## 📦 Required Libraries
+
+```bash
+pip install pandas matplotlib
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+python task3_monthly_charges_distribution.py
+```
+
+---
+
+## ✅ Conclusion
+
+This project successfully visualized the distribution of Monthly Charges using a Histogram. The analysis provided insights into customer billing patterns and demonstrated how data visualization can be used to better understand customer behavior and support business decision-making.
